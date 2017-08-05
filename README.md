@@ -1,6 +1,6 @@
 # Minecraft-Easy_Gamemode-Sign-Plugin
 
-Zu meinem Gamemode Befehlsplugin: [Minecraft-Easy_Gamemode]()
+Zu meinem Gamemode Befehlsplugin: [Minecraft-Easy_Gamemode](../../../Minecraft-Easy_Gamemode)
 
 
 Benutzung:
