@@ -80,6 +80,30 @@ public void onEnable()
 	    				  event.getPlayer().sendMessage(ChatColor.DARK_AQUA + "[EasyGamemode Sign Plugin] " + ChatColor.RED + "Du bist bereits im Überlebensmodus!");
 	    			  }
  	    		  }
+	    		  if(sign.getLine(1).equalsIgnoreCase("Hardcore"))
+	    		  {
+	    			  if(event.getPlayer().getGameMode() != GameMode.ADVENTURE)
+	    			  {
+	    				  event.getPlayer().setGameMode(GameMode.ADVENTURE);
+		    			  event.getPlayer().sendMessage(ChatColor.DARK_AQUA + "[EasyGamemode Sign Plugin] " + ChatColor.GREEN + "Du wurdest in den Hardcore gesetzt!");
+	    			  }
+	    			  else
+	    			  {
+	    				  event.getPlayer().sendMessage(ChatColor.DARK_AQUA + "[EasyGamemode Sign Plugin] " + ChatColor.RED + "Du bist bereits im Hardcore!");
+	    			  }
+ 	    		  }
+	    		  if(sign.getLine(1).equalsIgnoreCase("Spectator"))
+	    		  {
+	    			  if(event.getPlayer().getGameMode() != GameMode.SPECTATOR)
+	    			  {
+	    				  event.getPlayer().setGameMode(GameMode.SPECTATOR);
+		    			  event.getPlayer().sendMessage(ChatColor.DARK_AQUA + "[EasyGamemode Sign Plugin] " + ChatColor.GREEN + "Du wurdest in den Spectator gesetzt!");
+	    			  }
+	    			  else
+	    			  {
+	    				  event.getPlayer().sendMessage(ChatColor.DARK_AQUA + "[EasyGamemode Sign Plugin] " + ChatColor.RED + "Du bist bereits im Spectator!");
+	    			  }
+ 	    		  }
  	    	  }
  	      }
  	  }
